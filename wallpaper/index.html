@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Free lock screen wallpapers · Foothold</title>
+<meta name="description" content="Five free Foothold lock screen wallpapers for iPhone. No email, no sign-up. Tap one and save it.">
+<meta property="og:title" content="Free lock screen wallpapers · Foothold">
+<meta property="og:description" content="Five dark mountain lock screens. No email, no sign-up.">
+<meta property="og:image" content="https://footholdclimb.com/wallpaper/preview.jpg">
+<meta name="theme-color" content="#0A0A0A">
+<link rel="icon" href="../favicon.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<style>
+  /* Same dark page as the home page: one column of words, then the five wallpapers as tall phone
+     shapes. Each picture is the full-size image, so pressing and holding it saves the real thing. */
+  :root {
+    --night: #0A0A0A;
+    --paper: #F2F2F2;
+    --mist: #A6A6AB;
+    --hint: #6C6C71;
+    --faint: #2C2C2E;
+    --gold: #D4AF37;
+    --serif: "New York", ui-serif, "Iowan Old Style", Georgia, "Times New Roman", serif;
+    --sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--night); }
+  body {
+    margin: 0;
+    background: var(--night);
+    color: var(--paper);
+    font: 400 1.0625rem/1.6 var(--sans);
+    -webkit-font-smoothing: antialiased;
+    padding-left: max(20px, env(safe-area-inset-left, 0px));
+    padding-right: max(20px, env(safe-area-inset-right, 0px));
+  }
+  a { color: inherit; text-underline-offset: 3px; text-decoration-color: var(--hint); }
+  a:hover { text-decoration-color: var(--paper); }
+  a:focus-visible { outline: 1px solid var(--gold); outline-offset: 4px; }
+  .wrap { max-width: 1040px; margin: 0 auto; }
+
+  header.top {
+    display: flex; justify-content: space-between; align-items: center;
+    padding-block: 28px 0;
+    font-size: .9375rem;
+  }
+  .wordmark { font-family: var(--serif); font-size: 1.25rem; letter-spacing: .01em; text-decoration: none; }
+  .top nav { display: flex; gap: 24px; color: var(--mist); }
+  .top nav a { text-decoration: none; }
+  .top nav a:hover { color: var(--paper); }
+
+  .intro { padding-block: 72px 48px; max-width: 40ch; }
+  .intro h1 {
+    font-family: var(--serif); font-weight: 400;
+    font-size: clamp(2.25rem, 5.6vw, 3.75rem); line-height: 1.08; letter-spacing: -.015em;
+    margin: 0 0 20px; text-wrap: balance;
+  }
+  .intro p { margin: 0; color: var(--mist); font-size: 1.1875rem; }
+
+  .walls {
+    list-style: none; margin: 0; padding: 0 0 24px;
+    display: grid; gap: 40px 24px;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+  .walls figure { margin: 0; }
+  .walls img {
+    display: block; width: 100%; height: auto; aspect-ratio: 1290 / 2796;
+    border-radius: 22px; border: 1px solid var(--faint); background: var(--night);
+    -webkit-touch-callout: default;
+  }
+  .walls figcaption { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-top: 12px; }
+  .name { font-family: var(--serif); font-size: 1.125rem; }
+  .get { color: var(--mist); font-size: .9375rem; min-height: 44px; display: inline-flex; align-items: center; }
+
+  .how {
+    display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); gap: 40px;
+    padding-block: 64px; margin-top: 48px; border-top: 1px solid var(--faint);
+  }
+  .label { color: var(--hint); font-size: .8125rem; letter-spacing: .08em; text-transform: uppercase; margin: 6px 0 0; }
+  .how ol { margin: 0; padding-left: 1.2em; display: grid; gap: 14px; max-width: 46ch; color: var(--mist); }
+  .how ol strong { color: var(--paper); font-weight: 500; }
+
+  .about {
+    display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); gap: 40px;
+    padding-block: 64px 88px; border-top: 1px solid var(--faint);
+  }
+  .about h2 { font-family: var(--serif); font-weight: 400; font-size: 1.375rem; margin: 0 0 6px; }
+  .about p { margin: 0 0 14px; color: var(--mist); max-width: 52ch; }
+
+  footer {
+    border-top: 1px solid var(--faint);
+    padding-block: 32px 48px;
+    display: flex; flex-wrap: wrap; gap: 12px 32px; justify-content: space-between;
+    color: var(--hint); font-size: .875rem;
+  }
+  footer .links { display: flex; flex-wrap: wrap; gap: 12px 28px; }
+  .mail { user-select: all; }
+
+  @media (max-width: 720px) {
+    .intro { padding-block: 48px 36px; }
+    .walls { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 16px; }
+    .walls img { border-radius: 18px; }
+    .walls figcaption { flex-direction: column; gap: 0; }
+    .how, .about { grid-template-columns: 1fr; gap: 24px; padding-block: 48px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="wordmark" href="../">Foothold</a>
+    <nav aria-label="Site">
+      <a href="https://charlie2008z-ai.github.io/foothold-privacy/">Privacy</a>
+      <a href="#support">Support</a>
+    </nav>
+  </header>
+
+  <section class="intro">
+    <h1>Free lock screen wallpapers.</h1>
+    <p>Five dark mountains for your iPhone. No email, no sign-up. Press and hold one, then tap Save to Photos.</p>
+  </section>
+
+  <ul class="walls">
+    <li><figure>
+      <img src="foothold-wallpaper-01-the-summit.jpg" width="1290" height="2796" alt="One dark peak with soft white light at the top and a single gold foothold on its face">
+      <figcaption><span class="name">The summit</span><a class="get" href="foothold-wallpaper-01-the-summit.png" download>Download</a></figcaption>
+    </figure></li>
+    <li><figure>
+      <img src="foothold-wallpaper-02-the-range.jpg" width="1290" height="2796" alt="A dark mountain range with a dotted gold trail climbing the middle peak">
+      <figcaption><span class="name">The range</span><a class="get" href="foothold-wallpaper-02-the-range.png" download>Download</a></figcaption>
+    </figure></li>
+    <li><figure>
+      <img src="foothold-wallpaper-03-summit-reached.jpg" width="1290" height="2796" loading="lazy" alt="A narrow dark peak with a small gold flag at the top">
+      <figcaption><span class="name">Summit reached</span><a class="get" href="foothold-wallpaper-03-summit-reached.png" download>Download</a></figcaption>
+    </figure></li>
+    <li><figure>
+      <img src="foothold-wallpaper-04-one-foothold.jpg" width="1290" height="2796" loading="lazy" alt="A dark peak with a gold flag and the words One foothold at a time">
+      <figcaption><span class="name">One foothold</span><a class="get" href="foothold-wallpaper-04-one-foothold.png" download>Download</a></figcaption>
+    </figure></li>
+    <li><figure>
+      <img src="foothold-wallpaper-05-what-are-you-putting-off.jpg" width="1290" height="2796" loading="lazy" alt="A dark peak with one gold foothold and the words What are you putting off?">
+      <figcaption><span class="name">The question</span><a class="get" href="foothold-wallpaper-05-what-are-you-putting-off.png" download>Download</a></figcaption>
+    </figure></li>
+  </ul>
+
+  <section class="how" aria-labelledby="how-label">
+    <p class="label" id="how-label">Set it</p>
+    <ol>
+      <li>Press and hold the wallpaper you like, then tap <strong>Save to Photos</strong>.</li>
+      <li>Open <strong>Settings</strong>, tap <strong>Wallpaper</strong>, then <strong>Add New Wallpaper</strong>.</li>
+      <li>Tap <strong>Photos</strong>, pick the mountain, and tap <strong>Add</strong>.</li>
+    </ol>
+  </section>
+
+  <section class="about" aria-labelledby="about-label">
+    <p class="label" id="about-label">Why mountains</p>
+    <div>
+      <h2>There’s one thing you keep putting off.</h2>
+      <p>Foothold is a calm, private iPhone app for it. You name the summit, promise one small step by a time you choose, and prove it with a photo. Each kept step is a foothold.</p>
+      <p>A private app: no account, nothing to share or post, and your photos stay on your iPhone. Coming soon to the App Store.</p>
+    </div>
+  </section>
+
+  <footer id="support">
+    <span>Foothold · A private app · Coming soon to the App Store</span>
+    <span class="links">
+      <span>Support: <span class="mail">footholdapp@gmail.com</span></span>
+      <a href="https://charlie2008z-ai.github.io/foothold-privacy/">Privacy</a>
+    </span>
+  </footer>
+</div>
+</body>
+</html>
